@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    margin:0;
+
+    font-family:Segoe UI,sans-serif;
+
+    background:#edf6ff;
+
+}
+
+.container{
+    width:95%;
+    max-width:1600px;
+    margin:auto;
+    padding:30px;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+}
+
+h1{
+    font-size:48px;
+    color:#1e293b;
+}
+
+.toolbar{
+    display:flex;
+    gap:10px;
+}
+
+.toolbar input{
+    width:250px;
+    padding:12px;
+}
+
+.toolbar select{
+    padding:12px;
+}
+
+.toolbar button{
+    padding:12px 20px;
+    background:#1976d2;
+    border:none;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.section-header{
+    background:#dbeafe;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.lesson-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:20px;
+}
+
+.lesson-card{
+
+    background:white;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.lesson-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+.lesson-number{
+
+    color:#2563eb;
+
+    font-size:32px;
+    font-weight:bold;
+
+    margin-bottom:10px;
+}
+
+.lesson-title{
+
+    font-size:22px;
+
+    color:#334155;
+
+    margin-bottom:15px;
+}
+
+.lesson-info{
+
+    color:#64748b;
+
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:32px;
+    }
+
+    .toolbar{
+        width:100%;
+        margin-top:20px;
+        flex-direction:column;
+    }
+
+    .toolbar input{
+        width:100%;
+    }
+
+}
+

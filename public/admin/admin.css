@@ -1,0 +1,223 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f5f7fb;
+    font-family:Segoe UI,sans-serif;
+}
+
+.topbar{
+
+    background:white;
+
+    padding:20px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:1px solid #e5e7eb;
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#1e293b;
+}
+
+.topbar nav{
+    display:flex;
+    gap:20px;
+}
+
+.topbar nav a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:600;
+}
+
+.container{
+    max-width:1500px;
+    margin:auto;
+    padding:30px;
+}
+
+.upload-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:16px;
+
+    margin-bottom:25px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:10px;
+}
+
+button{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.lesson-section{
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+}
+
+.conversation-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fill,minmax(350px,1fr));
+
+    gap:20px;
+
+    margin-top:20px;
+}
+
+.conversation-card{
+
+    border:1px solid #dee2e6;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    background:#fff;
+
+    transition:.3s;
+}
+
+.conversation-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.08);
+}
+
+.number{
+
+    color:#2563eb;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+}
+
+.title{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+}
+
+.info{
+
+    color:#64748b;
+
+    margin-bottom:15px;
+}
+
+.actions{
+    display:flex;
+    gap:10px;
+}
+
+.delete-btn{
+    background:#ef4444;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+.view-btn{
+    background:#10b981;
+}
+
+.view-btn:hover{
+    background:#059669;
+}
+
+#message{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.success{
+    color:green;
+}
+
+.error{
+    color:red;
+}
+
+@media(max-width:768px){
+
+    .conversation-grid{
+        grid-template-columns:1fr;
+    }
+
+    .topbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+}

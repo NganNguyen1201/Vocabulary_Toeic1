@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOEIC Listening - Admin</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="logo">
+        🎧 TOEIC Listening
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/admin/admin.html">Admin</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="upload-card">
+
+        <h2>Create Conversation</h2>
+
+        <div class="form-group">
+            <label>Conversation Title</label>
+            <input
+                type="text"
+                id="title"
+                placeholder="Ví dụ: Hotel Reservation">
+        </div>
+
+        <div class="form-group">
+            <label>Level</label>
+
+            <select id="level">
+                <option>A1</option>
+                <option>A2</option>
+                <option selected>B1</option>
+                <option>B2</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Excel File</label>
+
+        <input
+            type="file"
+            id="file"
+            accept=".xlsx,.xls"
+        </div>
+
+        <button id="uploadBtn">
+            Upload Conversation
+        </button>
+
+        <div id="message"></div>
+
+    </div>
+
+    <div class="lesson-section">
+
+        <h2>Conversations</h2>
+
+        <div
+            id="conversationList"
+            class="conversation-grid">
+        </div>
+
+    </div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
